@@ -25,6 +25,11 @@ export default {
    * the paths need to be absolute (https://jestjs.io/docs/configuration#modulepaths-arraystring)
    */
   modulePaths: ['<rootDir>/../../node_modules/swiper/angular/'],
+
+  // ADD THIS CONFIG FOR SWIPER 7 TO WORK WITH JEST
+  // moduleNameMapper: {
+  //   swiper_angular: '<rootDir>/../../node_modules/swiper/angular/',
+  // },
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',
